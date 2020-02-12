@@ -1,0 +1,37 @@
+android.media.AudioManager.startBluetoothSco()void :: android.permission.MODIFY_AUDIO_SETTINGS 
+android.media.AudioManager.startBluetoothScoVirtualCall()void :: android.permission.MODIFY_AUDIO_SETTINGS
+android.service.carrier.CarrierService.notifyCarrierNetworkChange(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.CarrierConfigManager.getConfigForSubId(int)android.os.PersistableBundle :: android.permission.READ_PHONE_STATE 
+android.telephony.CarrierConfigManager.getConfig()android.os.PersistableBundle :: android.permission.READ_PHONE_STATE 
+android.telephony.SmsManager.sendTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)void :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.SmsManager.sendMultipartTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.util.List<java.lang.String>,java.util.List<android.app.PendingIntent>,java.util.List<android.app.PendingIntent>)void :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.setVisualVoicemailSmsFilterSettings(android.telephony.VisualVoicemailSmsFilterSettings)void :: android.permission.READ_PHONE_STATE android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.sendVisualVoicemailSms(java.lang.String,int,java.lang.String,android.app.PendingIntent)void :: android.permission.SEND_SMS 
+android.telephony.TelephonyManager.setVoiceActivationState(int,int)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setDataActivationState(int,int)void :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.iccOpenLogicalChannel(java.lang.String)android.telephony.IccOpenLogicalChannelResponse :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccOpenLogicalChannel(java.lang.String,int)android.telephony.IccOpenLogicalChannelResponse :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccOpenLogicalChannel(int,java.lang.String,int)android.telephony.IccOpenLogicalChannelResponse :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccCloseLogicalChannel(int)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccCloseLogicalChannel(int,int)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccTransmitApduLogicalChannel(int,int,int,int,int,int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccTransmitApduLogicalChannel(int,int,int,int,int,int,int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccTransmitApduBasicChannel(int,int,int,int,int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccTransmitApduBasicChannel(int,int,int,int,int,int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccExchangeSimIO(int,int,int,int,int,java.lang.String)byte[] :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccExchangeSimIO(int,int,int,int,int,int,java.lang.String)byte[] :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.sendEnvelopeWithStatus(java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.sendEnvelopeWithStatus(int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.nvReadItem(int)java.lang.String :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.nvWriteItem(int,java.lang.String)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.nvWriteCdmaPrl(byte[])boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.nvResetConfig(int)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.getPreferredNetworkType(int)int :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setNetworkSelectionModeAutomatic(int)void :: android.permission.MODIFY_PHONE_STATE
+ndroid.telephony.TelephonyManager.setPreferredNetworkType(int,int)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setDataEnabled(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setSimPowerState(int)void :: android.pemission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setSimPowerStateForSlot(int,int)void :: android.pemission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setAllowedCarriers(int,java.util.List<android.service.carrier.CarrierIdentifier>)int :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.VisualVoicemailService.setSmsFilterSettings(android.content.Context,android.telecom.PhoneAccountHandle,android.telephony.VisualVoicemailSmsFilterSettings)void :: android.permission.READ_PHONE_STATE android.permission.READ_PHONE_STATE 
+android.telephony.VisualVoicemailService.sendVisualVoicemailSms(android.content.Context,android.telecom.PhoneAccountHandle,java.lang.String,short,java.lang.String,android.app.PendingIntent)void :: android.permission.SEND_SMS 

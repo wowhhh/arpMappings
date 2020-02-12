@@ -1,0 +1,65 @@
+android.media.AudioManager.startBluetoothSco()void :: android.permission.MODIFY_AUDIO_SETTINGS 
+android.media.AudioManager.startBluetoothScoVirtualCall()void :: android.permission.MODIFY_AUDIO_SETTINGS
+android.service.carrier.CarrierService.notifyCarrierNetworkChange(boolean)void :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.CarrierConfigManager.getConfigForSubId(int)android.os.PersistableBundle :: android.permission.READ_PHONE_STATE 
+android.telephony.CarrierConfigManager.getConfig()android.os.PersistableBundle :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getDeviceSoftwareVersion()java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getDeviceId()java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getDeviceId(int)java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getCellLocation()android.telephony.CellLocation :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_COARSE_LOCATION
+android.telephony.TelephonyManager.enableLocationUpdates()void :: android.permission.CONTROL_LOCATION_UPDATES
+android.telephony.TelephonyManager.enableLocationUpdates(int)void :: android.permission.CONTROL_LOCATION_UPDATES
+android.telephony.TelephonyManager.disableLocationUpdates()void :: android.permission.CONTROL_LOCATION_UPDATES
+android.telephony.TelephonyManager.getNeighboringCellInfo()java.util.List<android.telephony.NeighboringCellInfo> :: android.permission.ACCESS_COARSE_UPDATES
+android.telephony.TelephonyManager.getNetworkType(int)int :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getDataNetworkType()int :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getDataNetworkType(int)int :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getVoiceNetworkType()int :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getVoiceNetworkType(int)int :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getSimSerialNumber()java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getSimSerialNumber(int)java.lang.String :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getLteOnCdmaMode()int :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getLteOnCdmaMode(int)int :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getSubscriberId()java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getSubscriberId(int)java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getGroupIdLevel1()java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getGroupIdLevel1(int)java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getLine1Number()java.lang.String :: android.permission.READ_PHONE_STATE, android.permission.READ_SMS 
+android.telephony.TelephonyManager.getLine1Number(int)java.lang.String :: android.permission.READ_PHONE_STATE, android.permission.READ_SMS 
+android.telephony.TelephonyManager.getLine1AlphaTag()java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getLine1AlphaTag(int)java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getMsisdn()java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getMsisdn(int)java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getVoiceMailNumber()java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getVoiceMailNumber(int)java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getCompleteVoiceMailNumber()java.lang.String :: android.permission.CALL_PRIVILEGED CALL_PRIVILEGED 
+android.telephony.TelephonyManager.getCompleteVoiceMailNumber(int)java.lang.String :: android.permission.CALL_PRIVILEGED CALL_PRIVILEGED 
+android.telephony.TelephonyManager.getVoiceMessageCount()int :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getVoiceMessageCount(int)int :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getVoiceMailAlphaTag()java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getVoiceMailAlphaTag(int)java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getCdmaEriIconIndex()int :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getCdmaEriIconIndex(int)int :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getCdmaEriIconMode()int :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getCdmaEriIconMode(int)int :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getCdmaEriText()java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.getCdmaEriText(int)java.lang.String :: android.permission.READ_PHONE_STATE 
+android.telephony.TelephonyManager.iccOpenLogicalChannel(java.lang.String)android.telephony.IccOpenLogicalChannelResponse :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.iccOpenLogicalChannel(int,java.lang.String)android.telephony.IccOpenLogicalChannelResponse :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.iccCloseLogicalChannel(int)boolean :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.iccCloseLogicalChannel(int,int)boolean :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.iccTransmitApduLogicalChannel(int,int,int,int,int,int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.iccTransmitApduLogicalChannel(int,int,int,int,int,int,int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.iccTransmitApduBasicChannel(int,int,int,int,int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.iccTransmitApduBasicChannel(int,int,int,int,int,int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.iccExchangeSimIO(int,int,int,int,int,java.lang.String)byte[] :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.iccExchangeSimIO(int,int,int,int,int,int,java.lang.String)byte[] :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.sendEnvelopeWithStatus(java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.sendEnvelopeWithStatus(int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.nvReadItem(int)java.lang.String :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.nvWriteItem(int,java.lang.String)boolean :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.nvWriteCdmaPrl(byte[])boolean :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.nvResetConfig(int)boolean :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.getPreferredNetworkType(int)int :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.setNetworkSelectionModeAutomatic(int)void :: android.permission.MODIFY_PHONE_STATE 
+android.telephony.TelephonyManager.setPreferredNetworkType(int,int)boolean :: android.permission.MODIFY_PHONE_STATE 
