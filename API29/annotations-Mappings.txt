@@ -2,7 +2,6 @@ android.accessibilityservice.AccessibilityService.getFingerprintGestureControlle
 android.accounts.AccountManager.finishSessionAsUser(android.os.Bundle,android.app.Activity,android.os.UserHandle,android.accounts.AccountManagerCallback<android.os.Bundle>,android.os.Handler)android.accounts.AccountManagerFuture<android.os.Bundle> :: android.permission.INTERACT_ACROSS_USERS_FULL
 android.app.ActivityManager.moveTaskToFront(int,int)void :: android.permission.REORDER_TASKS
 android.app.ActivityManager.moveTaskToFront(int,int,android.os.Bundle)void :: android.permission.REORDER_TASKS
-==>android.permission.CLEAR_APP_USER_DATA, android.permission.ACCESS_INSTANT_APPS
 android.app.ActivityManager.getPackageImportance(java.lang.String)int :: android.permission.PACKAGE_USAGE_STATS
 android.app.ActivityManager.getUidImportance(int)int :: android.permission.PACKAGE_USAGE_STATS
 android.app.ActivityManager.addOnUidImportanceListener(android.app.ActivityManager.OnUidImportanceListener,int)void :: android.permission.PACKAGE_USAGE_STATS
@@ -15,7 +14,6 @@ android.app.ActivityManager.switchUser(android.os.UserHandle)boolean :: android.
 android.app.ActivityManager.dumpPackageState(java.io.FileDescriptor,java.lang.String)void :: android.permission.DUMP
 android.app.ActivityManager.setPersistentVrThread(int)void :: android.permission.RESTRICTED_VR_ACCESS
 android.app.ActivityManager.scheduleApplicationInfoChanged(java.util.List<java.lang.String>,int)void :: android.permission.CHANGE_CONFIGURATION
-android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS
 android.app.ActivityTaskManager.setTaskWindowingMode(int,int,boolean)void :: android.permission.MANAGE_ACTIVITY_STACKS
 android.app.ActivityTaskManager.setTaskWindowingModeSplitScreenPrimary(int,int,boolean,boolean,android.graphics.Rect,boolean)void :: android.permission.MANAGE_ACTIVITY_STACKS
 android.app.ActivityTaskManager.resizeStack(int,android.graphics.Rect)void :: android.permission.MANAGE_ACTIVITY_STACKS
