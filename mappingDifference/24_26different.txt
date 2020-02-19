@@ -1,0 +1,56 @@
+Permission:android.permission.SEND_SMS
+android.telephony.TelephonyManager.sendVisualVoicemailSmsForSubscriber(int,java.lang.String,int,java.lang.String,android.app.PendingIntent)void	26+
+
+Permission:android.permission.READ_SMS
+android.telephony.TelephonyManager.getLine1Number()java.lang.String		26:permission change
+android.telephony.TelephonyManager.getLine1Number(int)java.lang.String	26:permission change
+
+Permission:android.permission.GET_ACCOUNTS
+android.accounts.AccountManager.hasFeatures(android.accounts.Account,java.lang.String[],android.accounts.AccountManagerCallback<java.lang.Boolean>,android.os.Handler)android.accounts.AccountManagerFuture<java.lang.Boolean>	26-
+android.accounts.AccountManager.addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener,android.os.Handler,boolean)void	26-
+android.accounts.AccountManager.getAccounts()android.accounts.Account[]	26-
+android.accounts.AccountManager.getAccountsByType(java.lang.String)android.accounts.Account[]	26-
+android.accounts.AccountManager.getAccountsAsUser(int)android.accounts.Account[]	26-
+android.accounts.AccountManager.getAccountsByTypeAndFeatures(java.lang.String,java.lang.String[],android.accounts.AccountManagerCallback<android.accounts.Account[]>,android.os.Handler)android.accounts.AccountManagerFuture<android.accounts.Account[]>	26-
+
+Permission:android.permission.CALL_PHONE
+android.telephony.TelephonyManager.sendUssdRequest(java.lang.String,android.telephony.TelephonyManager.UssdResponseCallback,android.os.Handler)void	26+
+android.telephony.TelephonyManager.call(java.lang.String,java.lang.String)void	26+
+android.telephony.TelephonyManager.endCall()boolean	26+
+
+Permission:android.permission.ACCESS_COARSE_LOCATION
+android.telephony.TelephonyManager.getNeighboringCellInfo()java.util.List<android.telephony.NeighboringCellInfo>	26:permission change
+
+Permission:android.permission.READ_PHONE_NUMBERS
+android.telephony.TelephonyManager.getLine1Number()java.lang.String		26:permission change
+android.telephony.TelephonyManager.getLine1Number(int)java.lang.String	26:permission change
+
+Permission:android.permission.ANSWER_PHONE_CALLS
+android.telecom.TelecomManager.acceptRingingCall()void	26+
+android.telecom.TelecomManager.acceptRingingCall(int)void	26+
+
+Permission:android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.isRinging()boolean	26+
+android.telephony.TelephonyManager.getImei(int)java.lang.String	26+
+android.telephony.TelephonyManager.isRadioOn()boolean	26+
+android.telephony.TelephonyManager.getDataActivationState(int)int	26+
+android.telephony.TelephonyManager.getCarrierConfig()android.os.PersistableBundle	26+
+android.telephony.TelephonyManager.isOffhook()boolean	26+
+android.os.Build.getSerial()java.lang.String	26+
+android.telephony.TelephonyManager.getForbiddenPlmns()java.lang.String[]	26+
+android.telephony.TelephonyManager.getVisualVoicemailPackageName()java.lang.String	26+
+android.telephony.TelephonyManager.getForbiddenPlmns(int,int)java.lang.String[]	26+
+android.telephony.TelephonyManager.getMeid()java.lang.String	26+
+android.telephony.TelephonyManager.getImei()java.lang.String	26+
+android.telephony.TelephonyManager.getVoiceActivationState(int)int	26+
+android.telephony.TelephonyManager.getMeid(int)java.lang.String	26+
+android.telephony.TelephonyManager.isVisualVoicemailEnabled(android.telecom.PhoneAccountHandle)boolean	26+
+android.telephony.TelephonyManager.getDeviceSoftwareVersion(int)java.lang.String	26+
+android.telecom.TelecomManager.getPhoneAccountsSupportingScheme(java.lang.String)java.util.List<android.telecom.PhoneAccountHandle>	26+
+android.telecom.TelecomManager.getSelfManagedPhoneAccounts()java.util.List<android.telecom.PhoneAccountHandle>	26+
+android.telecom.TelecomManager.isTtySupported()boolean	26+
+android.telecom.TelecomManager.isInManagedCall()boolean	26+
+android.telephony.TelephonyManager.isIdle()boolean	26+
+android.telephony.TelephonyManager.isVideoCallingEnabled()boolean	26+
+android.telecom.TelecomManager.isRinging()boolean	26+
+android.telephony.TelephonyManager.getServiceState()android.telephony.ServiceState	26+

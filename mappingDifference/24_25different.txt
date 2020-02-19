@@ -1,0 +1,9 @@
+Permission:android.permission.ACCESS_FINE_LOCATION
+android.telephony.TelephonyManager.getCellLocation()android.telephony.CellLocation	25+
+
+Permission:android.permission.ACCESS_COARSE_LOCATION
+android.telephony.TelephonyManager.getAllCellInfo()java.util.List<android.telephony.CellInfo>
+
+Permission:android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.isVisualVoicemailEnabled(android.telecom.PhoneAccountHandle)boolean
+
