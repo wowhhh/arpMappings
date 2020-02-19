@@ -1,37 +1,47 @@
 Permission:android.permission.SEND_SMS
 android.telephony.TelephonyManager.sendVisualVoicemailSms(java.lang.String,int,java.lang.String,android.app.PendingIntent)void
 android.telephony.VisualVoicemailService.sendVisualVoicemailSms(android.content.Context,android.telecom.PhoneAccountHandle,java.lang.String,short,java.lang.String,android.app.PendingIntent)void
+android.telephony.SmsManager.sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList<java.lang.String>,java.util.ArrayList<android.app.PendingIntent>,java.util.ArrayList<android.app.PendingIntent>,int,boolean,int)void
 android.telephony.SmsManager.sendTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)void
 android.telephony.TelephonyManager.sendVisualVoicemailSmsForSubscriber(int,java.lang.String,int,java.lang.String,android.app.PendingIntent)void
 
 Permission:android.permission.ACCESS_FINE_LOCATION
-android.telephony.TelephonyManager.requestCellInfoUpdate(android.os.WorkSource,java.util.concurrent.Executor,android.telephony.TelephonyManager.CellInfoCallback)void
 android.net.wifi.p2p.WifiP2pManager.requestPeers(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.PeerListListener)void
+android.bluetooth.le.BluetoothLeScanner.startScan(java.util.List<android.bluetooth.le.ScanFilter>,android.bluetooth.le.ScanSettings,android.app.PendingIntent)int
 android.net.wifi.WifiManager.getPrivilegedConfiguredNetworks()java.util.List<android.net.wifi.WifiConfiguration>
-android.telephony.TelephonyManager.requestCellInfoUpdate(java.util.concurrent.Executor,android.telephony.TelephonyManager.CellInfoCallback)void
 android.net.wifi.p2p.WifiP2pManager.createGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)void
-android.net.wifi.p2p.WifiP2pManager.discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)void
 android.telephony.TelephonyManager.getAllCellInfo()java.util.List<android.telephony.CellInfo>
-android.net.wifi.WifiManager.getConfiguredNetworks()java.util.List<android.net.wifi.WifiConfiguration>
+android.net.wifi.aware.WifiAwareSession.publish(android.net.wifi.aware.PublishConfig,android.net.wifi.aware.DiscoverySessionCallback,android.os.Handler)void
 android.telephony.TelephonyManager.requestNetworkScan(android.telephony.NetworkScanRequest,java.util.concurrent.Executor,android.telephony.TelephonyScanManager.NetworkScanCallback)android.telephony.NetworkScan
+android.net.wifi.p2p.WifiP2pManager.createGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)void
+android.net.wifi.rtt.WifiRttManager.startRanging(android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)void
+android.net.wifi.aware.WifiAwareSession.subscribe(android.net.wifi.aware.SubscribeConfig,android.net.wifi.aware.DiscoverySessionCallback,android.os.Handler)void
+android.location.LocationManager.injectLocation(android.location.Location)boolean
+android.net.wifi.aware.WifiAwareManager.attach(android.net.wifi.aware.AttachCallback,android.net.wifi.aware.IdentityChangedListener,android.os.Handler)void
+android.net.wifi.p2p.WifiP2pManager.addLocalService(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceInfo,android.net.wifi.p2p.WifiP2pManager.ActionListener)void
+android.telephony.TelephonyManager.requestCellInfoUpdate(android.os.WorkSource,java.util.concurrent.Executor,android.telephony.TelephonyManager.CellInfoCallback)void
+android.telephony.TelephonyManager.requestCellInfoUpdate(java.util.concurrent.Executor,android.telephony.TelephonyManager.CellInfoCallback)void
+android.net.wifi.aware.IdentityChangedListener.onIdentityChanged(byte[])void
+android.net.wifi.WifiManager.addNetworkSuggestions(java.util.List<android.net.wifi.WifiNetworkSuggestion>)int
+android.net.wifi.p2p.WifiP2pManager.discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)void
+android.net.wifi.WifiManager.getConfiguredNetworks()java.util.List<android.net.wifi.WifiConfiguration>
 android.telephony.TelephonyManager.requestNetworkScan(android.telephony.NetworkScanRequest,android.telephony.TelephonyScanManager.NetworkScanCallback)android.telephony.NetworkScan
 android.net.wifi.p2p.WifiP2pManager.discoverPeers(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)void
 android.net.wifi.p2p.WifiP2pManager.requestDeviceInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.DeviceInfoListener)void
 android.net.wifi.p2p.WifiP2pManager.connect(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)void
-android.net.wifi.p2p.WifiP2pManager.createGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)void
-android.net.wifi.rtt.WifiRttManager.startRanging(android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)void
-android.location.LocationManager.injectLocation(android.location.Location)boolean
+android.telephony.TelephonyManager.getCellLocation()android.telephony.CellLocation
 android.net.wifi.rtt.WifiRttManager.startRanging(android.os.WorkSource,android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)void
+android.net.wifi.WifiManager.startLocalOnlyHotspot(android.net.wifi.WifiManager.LocalOnlyHotspotCallback,android.os.Handler)void
+android.net.wifi.WifiManager.watchLocalOnlyHotspot(android.net.wifi.WifiManager.LocalOnlyHotspotObserver,android.os.Handler)void
 android.net.wifi.p2p.WifiP2pManager.requestGroupInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.GroupInfoListener)void
-android.net.wifi.p2p.WifiP2pManager.addLocalService(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceInfo,android.net.wifi.p2p.WifiP2pManager.ActionListener)void
+
+Permission:android.permission.ACCESS_MEDIA_LOCATION
+android.provider.MediaStore.setRequireOriginal(android.net.Uri)android.net.Uri
 
 Permission:android.permission.GET_ACCOUNTS
-android.accounts.AccountManager.hasFeatures(android.accounts.Account,java.lang.String[],android.accounts.AccountManagerCallback<java.lang.Boolean>,android.os.Handler)android.accounts.AccountManagerFuture<java.lang.Boolean>
 android.accounts.AccountManager.addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener,android.os.Handler,boolean)void
 android.accounts.AccountManager.getAccounts()android.accounts.Account[]
-android.accounts.AccountManager.getAccountsByType(java.lang.String)android.accounts.Account[]
 android.accounts.AccountManager.getAccountsAsUser(int)android.accounts.Account[]
-android.accounts.AccountManager.getAccountsByTypeAndFeatures(java.lang.String,java.lang.String[],android.accounts.AccountManagerCallback<android.accounts.Account[]>,android.os.Handler)android.accounts.AccountManagerFuture<android.accounts.Account[]>
 
 Permission:android.permission.CALL_PHONE
 android.telephony.TelephonyManager.sendUssdRequest(java.lang.String,android.telephony.TelephonyManager.UssdResponseCallback,android.os.Handler)void
@@ -39,6 +49,7 @@ android.telephony.TelephonyManager.call(java.lang.String,java.lang.String)void
 android.telephony.TelephonyManager.endCall()boolean
 
 Permission:android.permission.ACCESS_COARSE_LOCATION
+android.bluetooth.le.BluetoothLeScanner.startScan(java.util.List<android.bluetooth.le.ScanFilter>,android.bluetooth.le.ScanSettings,android.app.PendingIntent)int
 android.telephony.TelephonyScanManager.requestNetworkScan(int,android.telephony.NetworkScanRequest,java.util.concurrent.Executor,android.telephony.TelephonyScanManager.NetworkScanCallback,java.lang.String)android.telephony.NetworkScan
 android.telephony.TelephonyManager.getNeighboringCellInfo()java.util.List<android.telephony.NeighboringCellInfo>
 android.telephony.TelephonyManager.getServiceState()android.telephony.ServiceState
@@ -49,6 +60,9 @@ android.telephony.TelephonyManager.getLine1Number(int)java.lang.String
 
 Permission:android.permission.CAMERA
 android.hardware.camera2.CameraManager.openCamera(java.lang.String,java.util.concurrent.Executor,android.hardware.camera2.CameraDevice.StateCallback)void
+android.hardware.usb.UsbManager.hasPermission(android.hardware.usb.UsbDevice)boolean
+android.hardware.camera2.CameraCharacteristics.getKeysNeedingPermission()java.util.List<android.hardware.camera2.CameraCharacteristics.Key<?>>
+android.hardware.usb.UsbManager.requestPermission(android.hardware.usb.UsbDevice,android.app.PendingIntent)void
 
 Permission:android.permission.READ_EXTERNAL_STORAGE
 android.app.WallpaperManager.peekFastDrawable()android.graphics.drawable.Drawable
@@ -59,6 +73,11 @@ Permission:android.permission.ANSWER_PHONE_CALLS
 android.telecom.TelecomManager.acceptRingingCall()void
 android.telecom.TelecomManager.endCall()boolean
 android.telecom.TelecomManager.acceptRingingCall(int)void
+
+Permission:android.permission.WRITE_EXTERNAL_STORAGE
+android.support.v4.content.ContextCompat.getObbDirs(android.content.Context)java.io.File[]
+android.support.v4.content.ContextCompat.getExternalCacheDirs(android.content.Context)java.io.File[]
+android.support.v4.content.ContextCompat.getExternalFilesDirs(android.content.Context,java.lang.String)java.io.File[]
 
 Permission:android.permission.READ_PHONE_STATE
 android.telephony.SubscriptionManager.isActiveSubscriptionId(int)boolean
@@ -75,11 +94,13 @@ android.telephony.TelephonyManager.getDeviceSoftwareVersion(int)java.lang.String
 android.telephony.SubscriptionManager.getOpportunisticSubscriptions()java.util.List<android.telephony.SubscriptionInfo>
 android.telephony.TelephonyManager.getEmergencyNumberList(int)java.util.Map<java.lang.Integer, java.util.List<android.telephony.emergency.EmergencyNumber>>
 android.telephony.TelephonyManager.getNai()java.lang.String
+android.telephony.VisualVoicemailService.setSmsFilterSettings(android.content.Context,android.telecom.PhoneAccountHandle,android.telephony.VisualVoicemailSmsFilterSettings)void
 android.telephony.SubscriptionManager.getActiveSubscriptionInfoList()java.util.List<android.telephony.SubscriptionInfo>
 android.telecom.TelecomManager.isRinging()boolean
 android.telephony.TelephonyManager.getNumberOfModemsWithSimultaneousDataConnections()int
 android.telephony.TelephonyManager.doesSwitchMultiSimConfigTriggerReboot()boolean
 android.telephony.TelephonyManager.getServiceState()android.telephony.ServiceState
+com.android.internal.telephony.SubscriptionController.getSubscriptionsInGroup(android.os.ParcelUuid,java.lang.String)java.util.List<android.telephony.SubscriptionInfo>
 android.telephony.TelephonyManager.getPreferredOpportunisticDataSubscription()int
 android.telephony.SubscriptionManager.getActiveSubscriptionInfoCount()int
 android.telecom.TelecomManager.getUserSelectedOutgoingPhoneAccount()android.telecom.PhoneAccountHandle
@@ -87,6 +108,7 @@ android.telephony.TelephonyManager.getForbiddenPlmns()java.lang.String[]
 android.telephony.TelephonyManager.isDataRoamingEnabled()boolean
 android.telephony.SubscriptionManager.getActiveSubscriptionInfo(int)android.telephony.SubscriptionInfo
 android.telephony.TelephonyManager.isOffhook()boolean
+com.android.internal.telephony.TelephonyPermissions.enforeceCallingOrSelfReadPhoneStatePermissionOrCarrierPrivilege(android.content.Context,int,java.lang.String)void
 android.telephony.SubscriptionManager.getSubscriptionsInGroup(android.os.ParcelUuid)java.util.List<android.telephony.SubscriptionInfo>
 android.telephony.TelephonyManager.isVisualVoicemailEnabled(android.telecom.PhoneAccountHandle)boolean
 android.telephony.TelephonyManager.getCdmaRoamingMode()int

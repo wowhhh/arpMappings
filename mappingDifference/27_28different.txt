@@ -1,4 +1,5 @@
 Permission:android.permission.SEND_SMS
+android.telephony.SmsManager.sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList<java.lang.String>,java.util.ArrayList<android.app.PendingIntent>,java.util.ArrayList<android.app.PendingIntent>,int,boolean,int)void
 android.telephony.SmsManager.sendTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)void
 
 Permission:android.permission.ACCESS_FINE_LOCATION
@@ -12,6 +13,13 @@ androidx.appcompat.app.TwilightManager.getLastKnownLocationForProvider(java.lang
 
 Permission:android.permission.CAMERA
 android.hardware.camera2.CameraManager.openCamera(java.lang.String,java.util.concurrent.Executor,android.hardware.camera2.CameraDevice.StateCallback)void
+android.hardware.usb.UsbManager.hasPermission(android.hardware.usb.UsbDevice)boolean
+android.hardware.usb.UsbManager.requestPermission(android.hardware.usb.UsbDevice,android.app.PendingIntent)void
+
+Permission:android.permission.WRITE_EXTERNAL_STORAGE
+androidx.core.content.ContextCompat.getExternalCacheDirs(android.content.Context)java.io.File[]
+androidx.core.content.ContextCompat.getExternalFilesDirs(android.content.Context,java.lang.String)java.io.File[]
+androidx.core.content.ContextCompat.getObbDirs(android.content.Context)java.io.File[]
 
 Permission:android.permission.ANSWER_PHONE_CALLS
 android.telecom.TelecomManager.endCall()boolean
