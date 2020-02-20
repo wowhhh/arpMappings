@@ -1,0 +1,51 @@
+Permission:android.permission.SEND_SMS
+com.android.framework.permission.tests.SmsManagerPermissionTest.testSendDataMessage()void        delete in 24
+com.android.framework.permission.tests.SmsManagerPermissionTest.testSendTextMessage()void        delete in 24
+
+Permission:android.permission.ACCESS_FINE_LOCATION
+android.location.LocationManager.registerGnssStatusCallback(android.location.GnssStatus.Callback)boolean        add in 24
+android.location.LocationManager.registerGnssStatusCallback(android.location.GnssStatus.Callback,android.os.Handler)boolean        add in 24
+android.location.LocationManager.registerGnssMeasurementsCallback(android.location.GnssMeasurementsEvent.Callback,android.os.Handler)boolean        add in 24
+android.location.LocationManager.addNmeaListener(android.location.OnNmeaMessageListener,android.os.Handler)boolean        add in 24
+android.location.LocationManager.registerGnssNavigationMessageCallback(android.location.GnssNavigationMessage.Callback,android.os.Handler)boolean        add in 24
+android.location.LocationManager.registerGnssMeasurementsCallback(android.location.GnssMeasurementsEvent.Callback)boolean        add in 24
+android.location.LocationManager.getGpsStatus(android.location.GpsStatus)android.location.GpsStatus        add in 24
+android.location.LocationManager.addNmeaListener(android.location.OnNmeaMessageListener)boolean        add in 24
+
+Permission:android.permission.READ_SMS
+android.telephony.TelephonyManager.getLine1Number(int)java.lang.String        add in 24
+
+Permission:android.permission.READ_EXTERNAL_STORAGE
+android.os.storage.StorageVolume.createAccessIntent(java.lang.String)android.content.Intent        add in 24
+android.media.RingtoneManager.openRingtone(android.content.Context,android.net.Uri)java.io.InputStream        add in 24
+android.os.StrictMode.detectFileUriExposure()android.os.StrictMode.VmPolicy.Builder        add in 24
+
+Permission:android.permission.WRITE_EXTERNAL_STORAGE
+android.content.Context.getExternalFilesDirs(java.lang.String)java.io.File[]        add in 24
+android.content.Context.getObbDirs()java.io.File[]        add in 24
+android.os.storage.StorageVolume.createAccessIntent(java.lang.String)android.content.Intent        add in 24
+android.content.Context.getExternalCacheDirs()java.io.File[]        add in 24
+android.content.Context.getExternalMediaDirs()java.io.File[]        add in 24
+
+Permission:android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getLteOnCdmaMode(int)int        add in 24
+android.telephony.TelephonyManager.getSimSerialNumber(int)java.lang.String        add in 24
+android.telephony.TelephonyManager.getCdmaEriText(int)java.lang.String        add in 24
+android.telecom.TelecomManager.isVoiceMailNumber(android.telecom.PhoneAccountHandle,java.lang.String)boolean        add in 24
+android.telephony.TelephonyManager.getLine1AlphaTag(int)java.lang.String        add in 24
+android.telecom.TelecomManager.getDefaultOutgoingPhoneAccount(java.lang.String)android.telecom.PhoneAccountHandle        add in 24
+android.telephony.TelephonyManager.getNetworkType(int)int        add in 24
+android.telephony.TelephonyManager.getVoiceNetworkType(int)int        add in 24
+android.telephony.TelephonyManager.getMsisdn(int)java.lang.String        add in 24
+android.telecom.TelecomManager.getVoiceMailNumber(android.telecom.PhoneAccountHandle)java.lang.String        add in 24
+android.telephony.TelephonyManager.getGroupIdLevel1(int)java.lang.String        add in 24
+android.telecom.TelecomManager.getLine1Number(android.telecom.PhoneAccountHandle)java.lang.String        add in 24
+android.telephony.TelephonyManager.getLine1Number(int)java.lang.String        add in 24
+android.telephony.TelephonyManager.getVoiceMailNumber(int)java.lang.String        add in 24
+android.telecom.TelecomManager.getCallCapablePhoneAccounts()java.util.List<android.telecom.PhoneAccountHandle>        add in 24
+android.telephony.TelephonyManager.getCdmaEriIconMode(int)int        add in 24
+android.telephony.TelephonyManager.getSubscriberId(int)java.lang.String        add in 24
+android.telephony.TelephonyManager.getDataNetworkType(int)int        add in 24
+android.telephony.TelephonyManager.getCdmaEriIconIndex(int)int        add in 24
+android.telephony.TelephonyManager.getVoiceMessageCount(int)int        add in 24
+android.telephony.TelephonyManager.getVoiceMailAlphaTag(int)java.lang.String        add in 24

@@ -1,0 +1,89 @@
+Permission:android.permission.SEND_SMS
+android.telephony.TelephonyManager.sendVisualVoicemailSms(java.lang.String,int,java.lang.String,android.app.PendingIntent)void        add in 28
+android.telephony.VisualVoicemailService.sendVisualVoicemailSms(android.content.Context,android.telecom.PhoneAccountHandle,java.lang.String,short,java.lang.String,android.app.PendingIntent)void        add in 28
+android.telephony.SmsManager.sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList<java.lang.String>,java.util.ArrayList<android.app.PendingIntent>,java.util.ArrayList<android.app.PendingIntent>,int,boolean,int)void        add in 28
+android.telephony.SmsManager.sendTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)void        add in 28
+android.telephony.TelephonyManager.sendVisualVoicemailSmsForSubscriber(int,java.lang.String,int,java.lang.String,android.app.PendingIntent)void        add in 28
+
+Permission:android.permission.ACCESS_FINE_LOCATION
+android.net.wifi.rtt.WifiRttManager.startRanging(android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)void        add in 28
+android.telephony.TelephonyManager.getCellLocation()android.telephony.CellLocation      permission change between two version!
+android.bluetooth.le.BluetoothLeScanner.startScan(java.util.List<android.bluetooth.le.ScanFilter>,android.bluetooth.le.ScanSettings,android.app.PendingIntent)int        add in 28
+android.location.LocationManager.injectLocation(android.location.Location)boolean        add in 28
+android.net.wifi.rtt.WifiRttManager.startRanging(android.os.WorkSource,android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)void        add in 28
+androidx.appcompat.app.TwilightManager.getLastKnownLocationForProvider(java.lang.String)android.location.Location        add in 28
+
+Permission:android.permission.GET_ACCOUNTS
+android.accounts.AccountManager.addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener,android.os.Handler,boolean)void        delete in 28
+android.accounts.AccountManager.getAccounts()android.accounts.Account[]        delete in 28
+android.accounts.AccountManager.getAccountsAsUser(int)android.accounts.Account[]        delete in 28
+
+Permission:android.permission.CALL_PHONE
+android.telephony.TelephonyManager.sendUssdRequest(java.lang.String,android.telephony.TelephonyManager.UssdResponseCallback,android.os.Handler)void        add in 28
+android.telephony.TelephonyManager.call(java.lang.String,java.lang.String)void        add in 28
+android.telephony.TelephonyManager.endCall()boolean        add in 28
+
+Permission:android.permission.ACCESS_COARSE_LOCATION
+android.bluetooth.le.BluetoothLeScanner.startScan(java.util.List<android.bluetooth.le.ScanFilter>,android.bluetooth.le.ScanSettings,android.app.PendingIntent)int        add in 28
+android.net.wifi.aware.IdentityChangedListener.onIdentityChanged(byte[])void        add in 28
+android.net.wifi.aware.WifiAwareSession.subscribe(android.net.wifi.aware.SubscribeConfig,android.net.wifi.aware.DiscoverySessionCallback,android.os.Handler)void        add in 28
+androidx.appcompat.app.TwilightManager.getLastKnownLocationForProvider(java.lang.String)android.location.Location        add in 28
+android.net.wifi.WifiManager.startLocalOnlyHotspot(android.net.wifi.WifiManager.LocalOnlyHotspotCallback,android.os.Handler)void        add in 28
+android.net.wifi.aware.WifiAwareSession.publish(android.net.wifi.aware.PublishConfig,android.net.wifi.aware.DiscoverySessionCallback,android.os.Handler)void        add in 28
+android.telephony.TelephonyManager.getNeighboringCellInfo()java.util.List<android.telephony.NeighboringCellInfo>      permission change between two version!
+android.net.wifi.WifiManager.watchLocalOnlyHotspot(android.net.wifi.WifiManager.LocalOnlyHotspotObserver,android.os.Handler)void        add in 28
+android.net.wifi.aware.WifiAwareManager.attach(android.net.wifi.aware.AttachCallback,android.net.wifi.aware.IdentityChangedListener,android.os.Handler)void        add in 28
+
+Permission:android.permission.READ_PHONE_NUMBERS
+android.telephony.TelephonyManager.getLine1Number()java.lang.String      permission change between two version!
+android.telephony.TelephonyManager.getLine1Number(int)java.lang.String      permission change between two version!
+
+Permission:android.permission.CAMERA
+android.hardware.camera2.CameraManager.openCamera(java.lang.String,java.util.concurrent.Executor,android.hardware.camera2.CameraDevice.StateCallback)void        add in 28
+android.hardware.usb.UsbManager.hasPermission(android.hardware.usb.UsbDevice)boolean        add in 28
+android.hardware.usb.UsbManager.requestPermission(android.hardware.usb.UsbDevice,android.app.PendingIntent)void        add in 28
+
+Permission:android.permission.READ_EXTERNAL_STORAGE
+android.app.WallpaperManager.peekFastDrawable()android.graphics.drawable.Drawable        add in 28
+android.app.WallpaperManager.getWallpaperFile(int)android.os.ParcelFileDescriptor        add in 28
+android.app.WallpaperManager.getFastDrawable()android.graphics.drawable.Drawable        add in 28
+
+Permission:android.permission.ANSWER_PHONE_CALLS
+android.telecom.TelecomManager.acceptRingingCall()void        add in 28
+android.telecom.TelecomManager.endCall()boolean        add in 28
+android.telecom.TelecomManager.acceptRingingCall(int)void        add in 28
+
+Permission:android.permission.WRITE_EXTERNAL_STORAGE
+androidx.core.content.ContextCompat.getExternalCacheDirs(android.content.Context)java.io.File[]        add in 28
+androidx.core.content.ContextCompat.getExternalFilesDirs(android.content.Context,java.lang.String)java.io.File[]        add in 28
+androidx.core.content.ContextCompat.getObbDirs(android.content.Context)java.io.File[]        add in 28
+
+Permission:android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.isRinging()boolean        add in 28
+android.telephony.SubscriptionManager.getActiveSubscriptionInfoForSimSlotIndex(int)android.telephony.SubscriptionInfo        add in 28
+android.telephony.TelephonyManager.getImei(int)java.lang.String        add in 28
+android.telephony.TelephonyManager.getVisualVoicemailPackageName()java.lang.String        add in 28
+android.telephony.TelephonyManager.getForbiddenPlmns(int,int)java.lang.String[]        add in 28
+android.telephony.TelephonyManager.isRadioOn()boolean        add in 28
+android.telephony.TelephonyManager.getImei()java.lang.String        add in 28
+android.telephony.TelephonyManager.getCarrierConfig()android.os.PersistableBundle        add in 28
+android.telephony.TelephonyManager.getDeviceSoftwareVersion(int)java.lang.String        add in 28
+android.telephony.TelephonyManager.getNai()java.lang.String        add in 28
+android.telephony.VisualVoicemailService.setSmsFilterSettings(android.content.Context,android.telecom.PhoneAccountHandle,android.telephony.VisualVoicemailSmsFilterSettings)void        add in 28
+android.telephony.SubscriptionManager.getActiveSubscriptionInfoList()java.util.List<android.telephony.SubscriptionInfo>        add in 28
+android.telecom.TelecomManager.isRinging()boolean        add in 28
+android.telephony.TelephonyManager.getServiceState()android.telephony.ServiceState        add in 28
+android.telephony.SubscriptionManager.getActiveSubscriptionInfoCount()int        add in 28
+android.os.Build.getSerial()java.lang.String        add in 28
+android.telephony.TelephonyManager.getForbiddenPlmns()java.lang.String[]        add in 28
+android.telephony.SubscriptionManager.getActiveSubscriptionInfo(int)android.telephony.SubscriptionInfo        add in 28
+android.telephony.TelephonyManager.isOffhook()boolean        add in 28
+android.telephony.TelephonyManager.getMeid()java.lang.String        add in 28
+android.telephony.TelephonyManager.getMeid(int)java.lang.String        add in 28
+android.telecom.TelecomManager.getPhoneAccountsSupportingScheme(java.lang.String)java.util.List<android.telecom.PhoneAccountHandle>        add in 28
+android.telecom.TelecomManager.getSelfManagedPhoneAccounts()java.util.List<android.telecom.PhoneAccountHandle>        add in 28
+android.telecom.TelecomManager.isTtySupported()boolean        add in 28
+android.telecom.TelecomManager.isInManagedCall()boolean        add in 28
+android.telephony.TelephonyManager.isIdle()boolean        add in 28
+android.telephony.TelephonyManager.isVideoCallingEnabled()boolean        add in 28
+

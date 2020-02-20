@@ -1,0 +1,33 @@
+Permission:android.permission.SEND_SMS
+android.telephony.SmsManager.sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList<java.lang.String>,java.util.ArrayList<android.app.PendingIntent>,java.util.ArrayList<android.app.PendingIntent>,int,boolean,int)void        add in 28
+android.telephony.SmsManager.sendTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)void      permission change between two version!
+
+Permission:android.permission.ACCESS_FINE_LOCATION
+android.net.wifi.rtt.WifiRttManager.startRanging(android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)void        add in 28
+android.location.LocationManager.injectLocation(android.location.Location)boolean        add in 28
+android.net.wifi.rtt.WifiRttManager.startRanging(android.os.WorkSource,android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)void        add in 28
+androidx.appcompat.app.TwilightManager.getLastKnownLocationForProvider(java.lang.String)android.location.Location        add in 28
+
+Permission:android.permission.ACCESS_COARSE_LOCATION
+androidx.appcompat.app.TwilightManager.getLastKnownLocationForProvider(java.lang.String)android.location.Location        add in 28
+
+Permission:android.permission.CAMERA
+android.hardware.camera2.CameraManager.openCamera(java.lang.String,java.util.concurrent.Executor,android.hardware.camera2.CameraDevice.StateCallback)void        add in 28
+android.hardware.usb.UsbManager.hasPermission(android.hardware.usb.UsbDevice)boolean        add in 28
+android.hardware.usb.UsbManager.requestPermission(android.hardware.usb.UsbDevice,android.app.PendingIntent)void        add in 28
+
+Permission:android.permission.WRITE_EXTERNAL_STORAGE
+androidx.core.content.ContextCompat.getExternalCacheDirs(android.content.Context)java.io.File[]        add in 28
+androidx.core.content.ContextCompat.getExternalFilesDirs(android.content.Context,java.lang.String)java.io.File[]        add in 28
+androidx.core.content.ContextCompat.getObbDirs(android.content.Context)java.io.File[]        add in 28
+
+Permission:android.permission.ANSWER_PHONE_CALLS
+android.telecom.TelecomManager.endCall()boolean      permission change between two version!
+
+Permission:android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getNai()java.lang.String        add in 28
+android.telephony.SubscriptionManager.getActiveSubscriptionInfoForSimSlotIndex(int)android.telephony.SubscriptionInfo        add in 28
+android.telephony.SubscriptionManager.getActiveSubscriptionInfoList()java.util.List<android.telephony.SubscriptionInfo>        add in 28
+android.telephony.SubscriptionManager.getActiveSubscriptionInfo(int)android.telephony.SubscriptionInfo        add in 28
+android.telephony.SubscriptionManager.getActiveSubscriptionInfoCount()int        add in 28
+
