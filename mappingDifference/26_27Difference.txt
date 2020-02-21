@@ -1,13 +1,13 @@
 Permission:android.permission.ACCESS_FINE_LOCATION
-android.bluetooth.le.BluetoothLeScanner.startScan(java.util.List<android.bluetooth.le.ScanFilter>,android.bluetooth.le.ScanSettings,android.app.PendingIntent)int      permission change between two version!
-android.support.v7.app.TwilightManager.getLastKnownLocationForProvider(java.lang.String)android.location.Location        add in 27
+android.bluetooth.le.BluetoothLeScanner.startScan(java.util.List<android.bluetooth.le.ScanFilter>,android.bluetooth.le.ScanSettings,android.app.PendingIntent)int
+android.support.v7.app.TwilightManager.getLastKnownLocationForProvider(java.lang.String)android.location.Location
 
 Permission:android.permission.ACCESS_COARSE_LOCATION
-android.bluetooth.le.BluetoothLeScanner.startScan(java.util.List<android.bluetooth.le.ScanFilter>,android.bluetooth.le.ScanSettings,android.app.PendingIntent)int      permission change between two version!
-android.support.v7.app.TwilightManager.getLastKnownLocationForProvider(java.lang.String)android.location.Location        add in 27
+android.bluetooth.le.BluetoothLeScanner.startScan(java.util.List<android.bluetooth.le.ScanFilter>,android.bluetooth.le.ScanSettings,android.app.PendingIntent)int
+android.support.v7.app.TwilightManager.getLastKnownLocationForProvider(java.lang.String)android.location.Location
 
 Permission:android.permission.READ_EXTERNAL_STORAGE
-android.app.WallpaperManager.peekFastDrawable()android.graphics.drawable.Drawable        add in 27
-android.app.WallpaperManager.getWallpaperFile(int)android.os.ParcelFileDescriptor        add in 27
-android.app.WallpaperManager.getFastDrawable()android.graphics.drawable.Drawable        add in 27
+android.app.WallpaperManager.peekFastDrawable()android.graphics.drawable.Drawable
+android.app.WallpaperManager.getWallpaperFile(int)android.os.ParcelFileDescriptor
+android.app.WallpaperManager.getFastDrawable()android.graphics.drawable.Drawable
 
