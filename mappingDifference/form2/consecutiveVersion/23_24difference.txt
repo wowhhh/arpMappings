@@ -28,25 +28,8 @@ android.content.Context.getExternalCacheDirs()java.io.File[]
 android.content.Context.getExternalMediaDirs()java.io.File[]
 
 Permission:android.permission.READ_PHONE_STATE
-android.telephony.TelephonyManager.getLteOnCdmaMode(int)int
-android.telephony.TelephonyManager.getSimSerialNumber(int)java.lang.String
-android.telephony.TelephonyManager.getCdmaEriText(int)java.lang.String
-android.telecom.TelecomManager.isVoiceMailNumber(android.telecom.PhoneAccountHandle,java.lang.String)boolean
+android.telecom.TelecomManager.getCallCapablePhoneAccounts()java.util.List<android.telecom.PhoneAccountHandle>
+android.telecom.TelecomManager.getVoiceMailNumber(android.telecom.PhoneAccountHandle)java.lang.String permission change(add)
 android.telephony.TelephonyManager.getLine1AlphaTag(int)java.lang.String
 android.telecom.TelecomManager.getDefaultOutgoingPhoneAccount(java.lang.String)android.telecom.PhoneAccountHandle
-android.telephony.TelephonyManager.getNetworkType(int)int
-android.telephony.TelephonyManager.getVoiceNetworkType(int)int
-android.telephony.TelephonyManager.getMsisdn(int)java.lang.String
-android.telecom.TelecomManager.getVoiceMailNumber(android.telecom.PhoneAccountHandle)java.lang.String
-android.telephony.TelephonyManager.getGroupIdLevel1(int)java.lang.String
-android.telecom.TelecomManager.getLine1Number(android.telecom.PhoneAccountHandle)java.lang.String
-android.telephony.TelephonyManager.getLine1Number(int)java.lang.String
-android.telephony.TelephonyManager.getVoiceMailNumber(int)java.lang.String
-android.telecom.TelecomManager.getCallCapablePhoneAccounts()java.util.List<android.telecom.PhoneAccountHandle>
-android.telephony.TelephonyManager.getCdmaEriIconMode(int)int
-android.telephony.TelephonyManager.getSubscriberId(int)java.lang.String
-android.telephony.TelephonyManager.getDataNetworkType(int)int
-android.telephony.TelephonyManager.getCdmaEriIconIndex(int)int
-android.telephony.TelephonyManager.getVoiceMessageCount(int)int
-android.telephony.TelephonyManager.getVoiceMailAlphaTag(int)java.lang.String
-
+android.telecom.TelecomManager.isVoiceMailNumber(android.telecom.PhoneAccountHandle,java.lang.String)boolean

@@ -13,8 +13,6 @@ androidx.appcompat.app.TwilightManager.getLastKnownLocationForProvider(java.lang
 
 Permission:android.permission.CAMERA
 android.hardware.camera2.CameraManager.openCamera(java.lang.String,java.util.concurrent.Executor,android.hardware.camera2.CameraDevice.StateCallback)void
-android.hardware.usb.UsbManager.hasPermission(android.hardware.usb.UsbDevice)boolean
-android.hardware.usb.UsbManager.requestPermission(android.hardware.usb.UsbDevice,android.app.PendingIntent)void
 
 Permission:android.permission.WRITE_EXTERNAL_STORAGE
 androidx.core.content.ContextCompat.getExternalCacheDirs(android.content.Context)java.io.File[]
