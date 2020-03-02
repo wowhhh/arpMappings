@@ -260,20 +260,20 @@ android.hardware.location.ContextHubManager.getContextHubHandles()int[] :: andro
 android.hardware.location.ContextHubManager.unloadNanoApp(int)int :: android.permission.LOCATION_HARDWARE
 android.hardware.radio.RadioManager.listModules(java.util.List<android.hardware.radio.RadioManager.ModuleProperties>)int :: android.permission.ACCESS_BROADCAST_RADIO
 android.hardware.usb.UsbManager.grantPermission(android.hardware.usb.UsbDevice,java.lang.String)void :: android.permission.MANAGE_USB
-android.location.LocationManager.requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
-android.location.LocationManager.requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener,android.os.Looper)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
-android.location.LocationManager.requestLocationUpdates(long,float,android.location.Criteria,android.location.LocationListener,android.os.Looper)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
-android.location.LocationManager.requestLocationUpdates(java.lang.String,long,float,android.app.PendingIntent)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
-android.location.LocationManager.requestLocationUpdates(long,float,android.location.Criteria,android.app.PendingIntent)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
-android.location.LocationManager.requestSingleUpdate(java.lang.String,android.location.LocationListener,android.os.Looper)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
-android.location.LocationManager.requestSingleUpdate(android.location.Criteria,android.location.LocationListener,android.os.Looper)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
-android.location.LocationManager.requestSingleUpdate(java.lang.String,android.app.PendingIntent)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
-android.location.LocationManager.requestSingleUpdate(android.location.Criteria,android.app.PendingIntent)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
-android.location.LocationManager.injectLocation(android.location.Location)boolean :: android.permission.LOCATION_HARDWARE, android.permission.ACCESS_FINE_LOCATION
-android.location.LocationManager.addProximityAlert(double,double,float,long,android.app.PendingIntent)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
+android.location.LocationManager.requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
+android.location.LocationManager.requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener,android.os.Looper)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
+android.location.LocationManager.requestLocationUpdates(long,float,android.location.Criteria,android.location.LocationListener,android.os.Looper)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
+android.location.LocationManager.requestLocationUpdates(java.lang.String,long,float,android.app.PendingIntent)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
+android.location.LocationManager.requestLocationUpdates(long,float,android.location.Criteria,android.app.PendingIntent)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
+android.location.LocationManager.requestSingleUpdate(java.lang.String,android.location.LocationListener,android.os.Looper)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
+android.location.LocationManager.requestSingleUpdate(android.location.Criteria,android.location.LocationListener,android.os.Looper)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
+android.location.LocationManager.requestSingleUpdate(java.lang.String,android.app.PendingIntent)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
+android.location.LocationManager.requestSingleUpdate(android.location.Criteria,android.app.PendingIntent)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
+android.location.LocationManager.injectLocation(android.location.Location)boolean :: android.permission.LOCATION_HARDWARE, android.permission.ACCESS_FINE_LOCATION#allOf
+android.location.LocationManager.addProximityAlert(double,double,float,long,android.app.PendingIntent)void :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
 android.location.LocationManager.setLocationEnabledForUser(boolean,android.os.UserHandle)void :: android.permission.WRITE_SECURE_SETTINGS
 android.location.LocationManager.setProviderEnabledForUser(java.lang.String,boolean,android.os.UserHandle)boolean :: android.permission.WRITE_SECURE_SETTINGS
-android.location.LocationManager.getLastKnownLocation(java.lang.String)android.location.Location :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
+android.location.LocationManager.getLastKnownLocation(java.lang.String)android.location.Location :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
 android.location.LocationManager.addGpsStatusListener(android.location.GpsStatus.Listener)boolean :: android.permission.ACCESS_FINE_LOCATION
 android.location.LocationManager.registerGnssStatusCallback(android.location.GnssStatus.Callback)boolean :: android.permission.ACCESS_FINE_LOCATION
 android.location.LocationManager.registerGnssStatusCallback(android.location.GnssStatus.Callback,android.os.Handler)boolean :: android.permission.ACCESS_FINE_LOCATION
@@ -362,8 +362,8 @@ android.net.NetworkScoreManager.setActiveScorer(java.lang.String)boolean :: andr
 android.net.NetworkScoreManager.disableScoring()void :: android.permission.SCORE_NETWORKS, android.permission.REQUEST_NETWORK_SCORES
 android.net.NetworkScoreManager.isCallerActiveScorer(int)boolean :: android.permission.REQUEST_NETWORK_SCORES
 android.net.VpnService.prepareAndAuthorize(android.content.Context)void :: android.permission.CONTROL_VPN
-android.net.wifi.rtt.WifiRttManager.startRanging(android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)void :: android.permission.ACCESS_FINE_LOCATION, android.permission.CHANGE_WIFI_STATE, android.permission.ACCESS_WIFI_STATE
-android.net.wifi.rtt.WifiRttManager.startRanging(android.os.WorkSource,android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)void :: android.permission.LOCATION_HARDWARE, android.permission.ACCESS_FINE_LOCATION, android.permission.CHANGE_WIFI_STATE, android.permission.ACCESS_WIFI_STATE
+android.net.wifi.rtt.WifiRttManager.startRanging(android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)void :: android.permission.ACCESS_FINE_LOCATION, android.permission.CHANGE_WIFI_STATE, android.permission.ACCESS_WIFI_STATE#allOf
+android.net.wifi.rtt.WifiRttManager.startRanging(android.os.WorkSource,android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)void :: android.permission.LOCATION_HARDWARE, android.permission.ACCESS_FINE_LOCATION, android.permission.CHANGE_WIFI_STATE, android.permission.ACCESS_WIFI_STATE#allOf
 android.net.wifi.rtt.WifiRttManager.cancelRanging(android.os.WorkSource)void :: android.permission.LOCATION_HARDWARE
 android.net.wifi.RttManager.getRttCapabilities()android.net.wifi.RttManager.RttCapabilities :: android.permission.LOCATION_HARDWARE
 android.net.wifi.RttManager.startRanging(android.net.wifi.RttManager.RttParams[],android.net.wifi.RttManager.RttListener)void :: android.permission.LOCATION_HARDWARE
@@ -465,7 +465,7 @@ android.service.persistentdata.PersistentDataBlockManager.setOemUnlockEnabled(bo
 android.service.persistentdata.PersistentDataBlockManager.getOemUnlockEnabled()boolean :: android.permission.READ_OEM_UNLOCK_STATE, android.permission.OEM_UNLOCK_STATE
 android.service.persistentdata.PersistentDataBlockManager.getFlashLockState()int :: android.permission.READ_OEM_UNLOCK_STATE, android.permission.OEM_UNLOCK_STATE
 android.telecom.TelecomManager.getDefaultOutgoingPhoneAccount(java.lang.String)android.telecom.PhoneAccountHandle :: android.permission.READ_PHONE_STATE
-android.telecom.TelecomManager.getPhoneAccountsSupportingScheme(java.lang.String)java.util.List<android.telecom.PhoneAccountHandle> :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+android.telecom.TelecomManager.getPhoneAccountsSupportingScheme(java.lang.String)java.util.List<android.telecom.PhoneAccountHandle> :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE#anyOf
 android.telecom.TelecomManager.getCallCapablePhoneAccounts()java.util.List<android.telecom.PhoneAccountHandle> :: android.permission.READ_PHONE_STATE
 android.telecom.TelecomManager.getSelfManagedPhoneAccounts()java.util.List<android.telecom.PhoneAccountHandle> :: android.permission.READ_PHONE_STATE
 android.telecom.TelecomManager.isVoiceMailNumber(android.telecom.PhoneAccountHandle,java.lang.String)boolean :: android.permission.READ_PHONE_STATE
@@ -473,18 +473,18 @@ android.telecom.TelecomManager.getVoiceMailNumber(android.telecom.PhoneAccountHa
 android.telecom.TelecomManager.getLine1Number(android.telecom.PhoneAccountHandle)java.lang.String :: android.permission.READ_PHONE_STATE
 android.telecom.TelecomManager.isInCall()boolean :: android.permission.READ_PHONE_STATE
 android.telecom.TelecomManager.isInManagedCall()boolean :: android.permission.READ_PHONE_STATE
-android.telecom.TelecomManager.isRinging()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+android.telecom.TelecomManager.isRinging()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE#anyOf
 android.telecom.TelecomManager.endCall()boolean :: android.permission.ANSWER_PHONE_CALLS
-android.telecom.TelecomManager.acceptRingingCall()void :: android.permission.ANSWER_PHONE_CALLS, android.permission.MODIFY_PHONE_STATE
-android.telecom.TelecomManager.acceptRingingCall(int)void :: android.permission.ANSWER_PHONE_CALLS, android.permission.MODIFY_PHONE_STATE
+android.telecom.TelecomManager.acceptRingingCall()void :: android.permission.ANSWER_PHONE_CALLS, android.permission.MODIFY_PHONE_STATE#anyOf
+android.telecom.TelecomManager.acceptRingingCall(int)void :: android.permission.ANSWER_PHONE_CALLS, android.permission.MODIFY_PHONE_STATE#anyOf
 android.telecom.TelecomManager.silenceRinger()void :: android.permission.MODIFY_PHONE_STATE
-android.telecom.TelecomManager.isTtySupported()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+android.telecom.TelecomManager.isTtySupported()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE#anyOf
 android.telecom.TelecomManager.handleMmi(java.lang.String)boolean :: android.permission.MODIFY_PHONE_STATE
 android.telecom.TelecomManager.handleMmi(java.lang.String,android.telecom.PhoneAccountHandle)boolean :: android.permission.MODIFY_PHONE_STATE
 android.telecom.TelecomManager.getAdnUriForPhoneAccount(android.telecom.PhoneAccountHandle)android.net.Uri :: android.permission.MODIFY_PHONE_STATE
 android.telecom.TelecomManager.cancelMissedCallsNotification()void :: android.permission.MODIFY_PHONE_STATE
 android.telecom.TelecomManager.showInCallScreen(boolean)void :: android.permission.READ_PHONE_STATE
-android.telecom.TelecomManager.placeCall(android.net.Uri,android.os.Bundle)void :: android.permission.CALL_PHONE, android.permission.MANAGE_OWN_CALLS
+android.telecom.TelecomManager.placeCall(android.net.Uri,android.os.Bundle)void :: android.permission.CALL_PHONE, android.permission.MANAGE_OWN_CALLS#anyOf
 android.telecom.TelecomManager.enablePhoneAccount(android.telecom.PhoneAccountHandle,boolean)void :: android.permission.MODIFY_PHONE_STATE
 android.telephony.CarrierConfigManager.updateConfigForPhoneId(int,java.lang.String)void :: android.permission.MODIFY_PHONE_STATE
 android.telephony.euicc.EuiccManager.getOtaStatus()int :: android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
@@ -496,7 +496,7 @@ android.telephony.euicc.EuiccManager.deleteSubscription(int,android.app.PendingI
 android.telephony.euicc.EuiccManager.switchToSubscription(int,android.app.PendingIntent)void :: android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
 android.telephony.euicc.EuiccManager.updateSubscriptionNickname(int,java.lang.String,android.app.PendingIntent)void :: android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
 android.telephony.euicc.EuiccManager.eraseSubscriptions(android.app.PendingIntent)void :: android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
-android.telephony.SmsManager.sendTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)void :: android.permission.MODIFY_PHONE_STATE, android.permission.SEND_SMS
+android.telephony.SmsManager.sendTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)void :: android.permission.MODIFY_PHONE_STATE, android.permission.SEND_SMS#allOf
 android.telephony.SmsManager.sendMultipartTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.util.List<java.lang.String>,java.util.List<android.app.PendingIntent>,java.util.List<android.app.PendingIntent>)void :: android.permission.MODIFY_PHONE_STATE
 android.telephony.SubscriptionManager.getActiveSubscriptionInfo(int)android.telephony.SubscriptionInfo :: android.permission.READ_PHONE_STATE
 android.telephony.SubscriptionManager.getActiveSubscriptionInfoForSimSlotIndex(int)android.telephony.SubscriptionInfo :: android.permission.READ_PHONE_STATE
@@ -511,7 +511,7 @@ android.telephony.TelephonyManager.getImei(int)java.lang.String :: android.permi
 android.telephony.TelephonyManager.getMeid()java.lang.String :: android.permission.READ_PHONE_STATE
 android.telephony.TelephonyManager.getMeid(int)java.lang.String :: android.permission.READ_PHONE_STATE
 android.telephony.TelephonyManager.getNai()java.lang.String :: android.permission.READ_PHONE_STATE
-android.telephony.TelephonyManager.getCellLocation()android.telephony.CellLocation :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
+android.telephony.TelephonyManager.getCellLocation()android.telephony.CellLocation :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
 android.telephony.TelephonyManager.enableLocationUpdates()void :: android.permission.CONTROL_LOCATION_UPDATES
 android.telephony.TelephonyManager.enableLocationUpdates(int)void :: android.permission.CONTROL_LOCATION_UPDATES
 android.telephony.TelephonyManager.disableLocationUpdates()void :: android.permission.CONTROL_LOCATION_UPDATES
@@ -532,8 +532,8 @@ android.telephony.TelephonyManager.getSubscriberId()java.lang.String :: android.
 android.telephony.TelephonyManager.getSubscriberId(int)java.lang.String :: android.permission.READ_PHONE_STATE
 android.telephony.TelephonyManager.getGroupIdLevel1()java.lang.String :: android.permission.READ_PHONE_STATE
 android.telephony.TelephonyManager.getGroupIdLevel1(int)java.lang.String :: android.permission.READ_PHONE_STATE
-android.telephony.TelephonyManager.getLine1Number()java.lang.String :: android.permission.READ_PHONE_STATE, android.permission.READ_SMS, android.permission.READ_PHONE_NUMBERS
-android.telephony.TelephonyManager.getLine1Number(int)java.lang.String :: android.permission.READ_PHONE_STATE, android.permission.READ_SMS, android.permission.READ_PHONE_NUMBERS
+android.telephony.TelephonyManager.getLine1Number()java.lang.String :: android.permission.READ_PHONE_STATE, android.permission.READ_SMS, android.permission.READ_PHONE_NUMBERS#anyOf
+android.telephony.TelephonyManager.getLine1Number(int)java.lang.String :: android.permission.READ_PHONE_STATE, android.permission.READ_SMS, android.permission.READ_PHONE_NUMBERS#anyOf
 android.telephony.TelephonyManager.getLine1AlphaTag()java.lang.String :: android.permission.READ_PHONE_STATE
 android.telephony.TelephonyManager.getLine1AlphaTag(int)java.lang.String :: android.permission.READ_PHONE_STATE
 android.telephony.TelephonyManager.getMsisdn()java.lang.String :: android.permission.READ_PHONE_STATE
@@ -577,10 +577,10 @@ android.telephony.TelephonyManager.getCdmaMin(int)java.lang.String :: android.pe
 android.telephony.TelephonyManager.call(java.lang.String,java.lang.String)void :: android.permission.CALL_PHONE
 android.telephony.TelephonyManager.endCall()boolean :: android.permission.CALL_PHONE
 android.telephony.TelephonyManager.answerRingingCall()void :: android.permission.MODIFY_PHONE_STATE
-android.telephony.TelephonyManager.isOffhook()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
-android.telephony.TelephonyManager.isRinging()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
-android.telephony.TelephonyManager.isIdle()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
-android.telephony.TelephonyManager.isRadioOn()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.isOffhook()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE#anyOf
+android.telephony.TelephonyManager.isRinging()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE#anyOf
+android.telephony.TelephonyManager.isIdle()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE#anyOf
+android.telephony.TelephonyManager.isRadioOn()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE#anyOf
 android.telephony.TelephonyManager.supplyPin(java.lang.String)boolean :: android.permission.MODIFY_PHONE_STATE
 android.telephony.TelephonyManager.supplyPuk(java.lang.String,java.lang.String)boolean :: android.permission.MODIFY_PHONE_STATE
 android.telephony.TelephonyManager.supplyPinReportResult(java.lang.String)int[] :: android.permission.MODIFY_PHONE_STATE
@@ -596,7 +596,7 @@ android.telephony.TelephonyManager.disableDataConnectivity()boolean :: android.p
 android.telephony.TelephonyManager.setDataEnabled(boolean)void :: android.permission.MODIFY_PHONE_STATE
 android.telephony.TelephonyManager.setDataEnabled(int,boolean)void :: android.permission.MODIFY_PHONE_STATE
 android.telephony.TelephonyManager.enableVideoCalling(boolean)void :: android.permission.MODIFY_PHONE_STATE
-android.telephony.TelephonyManager.isVideoCallingEnabled()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.isVideoCallingEnabled()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE#anyOf
 android.telephony.TelephonyManager.setSimPowerState(int)void :: android.permission.MODIFY_PHONE_STATE
 android.telephony.TelephonyManager.setSimPowerStateForSlot(int,int)void :: android.permission.MODIFY_PHONE_STATE
 android.telephony.TelephonyManager.getServiceState()android.telephony.ServiceState :: android.permission.READ_PHONE_STATE
@@ -610,7 +610,7 @@ android.view.InputDevice.disable()void :: android.permission.DISABLE_INPUT_DEVIC
 android.view.inputmethod.InputMethodManager.getVrInputMethodList()java.util.List<android.view.inputmethod.InputMethodInfo> :: android.permission.RESTRICTED_VR_ACCESS
 android.view.inputmethod.InputMethodManager.setCurrentInputMethodSubtype(android.view.inputmethod.InputMethodSubtype)boolean :: android.permission.WRITE_SECURE_SETTINGS
 android.view.WindowManager.getCurrentImeTouchRegion()android.graphics.Region :: android.permission.RESTRICTED_VR_ACCESS
-androidx.appcompat.app.TwilightManager.getLastKnownLocationForProvider(java.lang.String)android.location.Location :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION
+androidx.appcompat.app.TwilightManager.getLastKnownLocationForProvider(java.lang.String)android.location.Location :: android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION#anyOf
 androidx.core.hardware.fingerprint.FingerprintManagerCompat.hasEnrolledFingerprints()boolean :: android.permission.USE_FINGERPRINT
 androidx.core.hardware.fingerprint.FingerprintManagerCompat.isHardwareDetected()boolean :: android.permission.USE_FINGERPRINT
 androidx.core.net.ConnectivityManagerCompat.isActiveNetworkMetered(android.net.ConnectivityManager)boolean :: android.permission.ACCESS_NETWORK_STATE
