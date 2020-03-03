@@ -207,7 +207,8 @@ android.net.ConnectivityManager.startUsingNetworkFeature(int,java.lang.String)in
 android.net.ConnectivityManager.stopUsingNetworkFeature(int,java.lang.String)int :: android.permission.CHANGE_NETWORK_STATE
 android.net.ConnectivityManager.requestRouteToHost(int,int)boolean :: android.permission.CHANGE_NETWORK_STATE
 android.net.ConnectivityManager.requestRouteToHostAddress(int,java.net.InetAddress)boolean :: android.permission.CHANGE_NETWORK_STATE
-android.net.ConnectivityManager.setBackgroundDataSetting(boolean)void :: android.permission.CHANGE_BACKGROUND_DATA_SETTINGandroid.permission.CHANGE_BACKGROUND_DATA_SETTINGandroid.net.ConnectivityManager.tether(java.lang.String)int :: android.permission.CHANGE_NETWORK_STATE
+android.net.ConnectivityManager.setBackgroundDataSetting(boolean)void :: android.permission.CHANGE_BACKGROUND_DATA_SETTING
+android.net.ConnectivityManager.tether(java.lang.String)int :: android.permission.CHANGE_NETWORK_STATE
 android.net.ConnectivityManager.untether(java.lang.String)int :: android.permission.CHANGE_NETWORK_STATE
 android.net.ConnectivityManager.isTetheringSupported()boolean :: android.permission.TETHER_PRIVILEGED
 android.net.ConnectivityManager.setUsbTethering(boolean)int :: android.permission.CHANGE_NETWORK_STATE
