@@ -9,7 +9,7 @@ android.app.ActivityManager.handleIncomingUser(int,int,int,boolean,boolean,java.
 android.app.admin.DevicePolicyManager.setAlwaysOnVpnPackage(android.content.ComponentName,java.lang.String,boolean)void :: android.permission.BIND_VPN_SERVICE
 android.app.admin.DevicePolicyManager.setDeviceProvisioningConfigApplied()void :: android.permission.MANAGE_USERS
 android.app.admin.DevicePolicyManager.isDeviceProvisioningConfigApplied()boolean :: android.permission.MANAGE_USERS
-android.app.admin.DevicePolicyManager.forceUpdateUserSetupComplete()void :: android.permission..MANAGE_PROFILE_AND_DEVICE_OWNERS
+android.app.admin.DevicePolicyManager.forceUpdateUserSetupComplete()void :: android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS
 android.app.admin.DevicePolicyManager.bindDeviceAdminServiceAsUser(android.content.ComponentName,android.content.Intent,android.content.ServiceConnection,int,android.os.UserHandle)boolean :: android.permission.BIND_DEVICE_ADMIN
 android.app.admin.DevicePolicyManager.getOwnerInstalledCaCerts(android.os.UserHandle)java.util.List<java.lang.String> :: android.permission.INTERACT_ACROSS_USERS_FULL
 android.app.trust.TrustManager.reportUnlockAttempt(boolean,int)void :: android.permission.ACCESS_KEYGUARD_SECURE_STORAGE
@@ -178,13 +178,13 @@ android.hardware.display.DisplayManager.stopWifiDisplayScan()void :: android.per
 android.hardware.display.DisplayManager.connectWifiDisplay(java.lang.String)void :: android.permission.CONFIGURE_WIFI_DISPLAY
 android.hardware.display.DisplayManager.renameWifiDisplay(java.lang.String,java.lang.String)void :: android.permission.CONFIGURE_WIFI_DISPLAY
 android.hardware.display.DisplayManager.forgetWifiDisplay(java.lang.String)void :: android.permission.CONFIGURE_WIFI_DISPLAY
-android.hardware.input.InputManager.enableInputDevice(int)void :: android.permission.s.DISABLE_INPUT_DEVICE
-android.hardware.input.InputManager.disableInputDevice(int)void :: android.permission.s.DISABLE_INPUT_DEVICE
-android.hardware.input.InputManager.setTouchCalibration(java.lang.String,int,TouchCalibrationNot Found)void :: android.permission.s.SET_INPUT_CALIBRATION
-android.hardware.input.InputManager.setPointerSpeed(android.content.Context,int)void :: android.permission.s.WRITE_SETTINGS
-android.hardware.input.InputManager.tryPointerSpeed(int)void :: android.permission..SET_POINTER_SPEED
-android.hardware.input.InputManager.injectInputEvent(android.view.InputEvent,int)boolean :: android.permission..INJECT_EVENTS
-android.hardware.input.InputManager.createInputForwarder(int,IInputForwarderNot Found) :: android.permission..INJECT_EVENTS
+android.hardware.input.InputManager.enableInputDevice(int)void :: android.permission.DISABLE_INPUT_DEVICE
+android.hardware.input.InputManager.disableInputDevice(int)void :: android.permission.DISABLE_INPUT_DEVICE
+android.hardware.input.InputManager.setTouchCalibration(java.lang.String,int,TouchCalibrationNot Found)void :: android.permission.SET_INPUT_CALIBRATION
+android.hardware.input.InputManager.setPointerSpeed(android.content.Context,int)void :: android.permission.WRITE_SETTINGS
+android.hardware.input.InputManager.tryPointerSpeed(int)void :: android.permission.SET_POINTER_SPEED
+android.hardware.input.InputManager.injectInputEvent(android.view.InputEvent,int)boolean :: android.permission.INJECT_EVENTS
+android.hardware.input.InputManager.createInputForwarder(int,IInputForwarderNot Found) :: android.permission.INJECT_EVENTS
 android.hardware.location.GeofenceHardware.getMonitoringTypes()int[] :: android.permission.LOCATION_HARDWARE
 android.hardware.location.GeofenceHardware.addGeofence(int,int,GeofenceHardwareRequestNot Found,GeofenceHardwareCallbackNot Found)boolean :: android.permission.LOCATION_HARDWARE
 android.hardware.location.GeofenceHardware.removeGeofence(int,int)boolean :: android.permission.LOCATION_HARDWARE
@@ -202,8 +202,8 @@ android.location.LocationRequest.setHideFromAppOps(boolean)void :: android.permi
 android.media.AudioManager.startBluetoothSco()void :: android.permission.MODIFY_AUDIO_SETTINGS
 android.media.AudioManager.startBluetoothScoVirtualCall()void :: android.permission.MODIFY_AUDIO_SETTINGS
 android.media.AudioManager.registerAudioPolicy(AudioPolicyNot Found)int :: android.permission.MODIFY_AUDIO_ROUTING
-android.media.AudioRecordingConfiguration.getClientPackageName()java.lang.String :: android.permission..MODIFY_AUDIO_ROUTING
-android.media.AudioRecordingConfiguration.getClientUid()int :: android.permission..MODIFY_AUDIO_ROUTING
+android.media.AudioRecordingConfiguration.getClientPackageName()java.lang.String :: android.permission.MODIFY_AUDIO_ROUTING
+android.media.AudioRecordingConfiguration.getClientUid()int :: android.permission.MODIFY_AUDIO_ROUTING
 android.media.MediaExtractor.setDataSource(android.content.Context,android.net.Uri,java.util.Map<java.lang.String, java.lang.String>)void :: android.permission.INTERNET
 android.media.MediaExtractor.setDataSource(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)void :: android.permission.INTERNET
 android.media.MediaExtractor.setDataSource(java.lang.String)void :: android.permission.INTERNET
@@ -212,14 +212,14 @@ android.media.RingtoneManager.getCursor()android.database.Cursor :: android.perm
 android.media.RingtoneManager.getValidRingtoneUri(android.content.Context)android.net.Uri :: android.permission.READ_EXTERNAL_STORAGE
 android.media.RingtoneManager.openRingtone(android.content.Context,android.net.Uri)java.io.InputStream :: android.permission.READ_EXTERNAL_STORAGE
 android.media.session.MediaSessionManager.getActiveSessionsForUser(android.content.ComponentName,int)java.util.List<android.media.session.MediaController> :: android.permission.INTERACT_ACROSS_USERS_FULL
-android.net.ConnectivityManager.setAlwaysOnVpnPackageForUser(int,java.lang.String,boolean)boolean :: android.permission..BIND_VPN_SERVICE
+android.net.ConnectivityManager.setAlwaysOnVpnPackageForUser(int,java.lang.String,boolean)boolean :: android.permission.BIND_VPN_SERVICE
 android.net.ConnectivityManager.startUsingNetworkFeature(int,java.lang.String)int :: android.permission.CHANGE_NETWORK_STATE
 android.net.ConnectivityManager.stopUsingNetworkFeature(int,java.lang.String)int :: android.permission.CHANGE_NETWORK_STATE
 android.net.ConnectivityManager.requestRouteToHost(int,int)boolean :: android.permission.CHANGE_NETWORK_STATE
 android.net.ConnectivityManager.requestRouteToHostAddress(int,java.net.InetAddress)boolean :: android.permission.CHANGE_NETWORK_STATE
 android.net.ConnectivityManager.tether(java.lang.String)int :: android.permission.CHANGE_NETWORK_STATE
 android.net.ConnectivityManager.untether(java.lang.String)int :: android.permission.CHANGE_NETWORK_STATE
-android.net.ConnectivityManager.isTetheringSupported()boolean :: android.permission..TETHER_PRIVILEGED
+android.net.ConnectivityManager.isTetheringSupported()boolean :: android.permission.TETHER_PRIVILEGED
 android.net.ConnectivityManager.setUsbTethering(boolean)int :: android.permission.CHANGE_NETWORK_STATE
 android.net.ConnectivityManager.reportInetCondition(int,int)void :: android.permission.STATUS_BAR
 android.net.ConnectivityManager.requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback)void :: android.permission.CHANGE_NETWORK_STATE
@@ -427,9 +427,9 @@ com.android.nfc_extras.NfcExecutionEnvironment.transceive(byte[])byte[] :: andro
 com.android.server.backup.BackupPasswordManager.hasBackupPassword()boolean :: android.permission.BACKUP
 com.android.server.backup.BackupPasswordManager.backupPasswordMatches(java.lang.String)boolean :: android.permission.BACKUP
 com.android.server.backup.BackupPasswordManager.setBackupPassword(java.lang.String,java.lang.String)boolean :: android.permission.BACKUP
-com.android.server.connectivity.Vpn.setAlwaysOnPackage(java.lang.String,boolean)boolean :: android.permission..BIND_VPN_SERVICE
-com.android.server.ConnectivityService.prepareVpn(java.lang.String,java.lang.String,int)boolean :: android.permission..INTERACT_ACROSS_USERS_FULL
-com.android.server.ConnectivityService.setVpnPackageAuthorization(java.lang.String,int,boolean)void :: android.permission..INTERACT_ACROSS_USERS_FULL
+com.android.server.connectivity.Vpn.setAlwaysOnPackage(java.lang.String,boolean)boolean :: android.permission.BIND_VPN_SERVICE
+com.android.server.ConnectivityService.prepareVpn(java.lang.String,java.lang.String,int)boolean :: android.permission.INTERACT_ACROSS_USERS_FULL
+com.android.server.ConnectivityService.setVpnPackageAuthorization(java.lang.String,int,boolean)void :: android.permission.INTERACT_ACROSS_USERS_FULL
 com.android.server.pm.PackageSender.canViewInstantApps(int,int)boolean :: android.permission.ACCESS_INSTANT_APPS
 com.android.server.pm.UserManagerService.getUserRestrictionSource(java.lang.String,int)int :: android.permission.MANAGE_USERS
 com.android.server.pm.UserManagerService.checkManageUserAndAcrossUsersFullPermission(java.lang.String)void :: android.permission.INTERACT_ACROSS_USERS_FULL
