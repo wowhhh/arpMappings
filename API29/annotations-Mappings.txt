@@ -729,7 +729,7 @@ android.os.RecoverySystem.cancelScheduledUpdate(android.content.Context)void :: 
 android.os.RecoverySystem.rebootWipeAb(android.content.Context,java.io.File,java.lang.String)void :: android.permission.RECOVERY, android.permission.REBOOT :: allOf
 android.os.SystemUpdateManager.retrieveSystemUpdateInfo()android.os.Bundle :: android.permission.READ_SYSTEM_UPDATE_INFO, android.permission.RECOVERY :: anyOf
 android.os.SystemUpdateManager.updateSystemUpdateInfo(android.os.PersistableBundle)void :: android.permission.RECOVERY
-android.os.UserManager.getUserSwitchability()int :: android.permission.READ_PHONE_STATE, android.permission.MANAGE_USERS, android.permission.INTERACT_ACROSS_USERS }, android.permission.conditional = true) :: allOf
+android.os.UserManager.getUserSwitchability()int :: android.permission.READ_PHONE_STATE, android.permission.MANAGE_USERS, android.permission.INTERACT_ACROSS_USERS :: allOf
 android.os.UserManager.isPrimaryUser()boolean :: android.permission.MANAGE_USERS
 android.os.UserManager.isAdminUser()boolean :: android.permission.MANAGE_USERS
 android.os.UserManager.isRestrictedProfile()boolean :: android.permission.MANAGE_USERS
@@ -747,7 +747,7 @@ android.os.UserManager.setUserAdmin(int)void :: android.permission.INTERACT_ACRO
 android.os.UserManager.getSerialNumbersOfUsers(boolean)long[] :: android.permission.MANAGE_USERS
 android.os.UserManager.getUserAccount(int)java.lang.String :: android.permission.INTERACT_ACROSS_USERS_FULL, android.permission.MANAGE_USERS :: allOf
 android.os.UserManager.setUserAccount(int,java.lang.String)void :: android.permission.INTERACT_ACROSS_USERS_FULL, android.permission.MANAGE_USERS :: allOf
-android.os.UserManager.getProfileIds(int,boolean)int[] :: android.permission.MANAGE_USERS, android.permission.CREATE_USERS }, android.permission.conditional = true) :: anyOf
+android.os.UserManager.getProfileIds(int,boolean)int[] :: android.permission.MANAGE_USERS, android.permission.CREATE_USERS :: anyOf
 android.os.UserManager.getProfileParent(android.os.UserHandle)android.os.UserHandle :: android.permission.MANAGE_USERS
 android.os.UserManager.removeUser(android.os.UserHandle)boolean :: android.permission.MANAGE_USERS
 android.os.UserManager.setUserName(java.lang.String)void :: android.permission.MANAGE_USERS
@@ -762,7 +762,7 @@ android.os.Vibrator.vibrate(android.os.VibrationEffect,android.media.AudioAttrib
 android.os.Vibrator.vibrate(int,java.lang.String,android.os.VibrationEffect,java.lang.String,android.media.AudioAttributes)void :: android.permission.VIBRATE
 android.os.Vibrator.cancel()void :: android.permission.VIBRATE
 android.permission.PermissionControllerManager.revokeRuntimePermissions(java.util.Map<java.lang.String, java.util.List<java.lang.String>>,boolean,int,java.util.concurrent.Executor,android.permission.PermissionControllerManager.OnRevokeRuntimePermissionsCallback)void :: android.permission.REVOKE_RUNTIME_PERMISSIONS
-android.permission.PermissionControllerManager.setRuntimePermissionGrantStateByDeviceAdmin(java.lang.String,java.lang.String,java.lang.String,int,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Boolean>)void :: android.permission.GRANT_RUNTIME_PERMISSIONS, android.permission.REVOKE_RUNTIME_PERMISSIONS, android.permission.ADJUST_RUNTIME_PERMISSIONS_POLICY }, android.permission.conditional = true) :: allOf
+android.permission.PermissionControllerManager.setRuntimePermissionGrantStateByDeviceAdmin(java.lang.String,java.lang.String,java.lang.String,int,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Boolean>)void :: android.permission.GRANT_RUNTIME_PERMISSIONS, android.permission.REVOKE_RUNTIME_PERMISSIONS, android.permission.ADJUST_RUNTIME_PERMISSIONS_POLICY :: allOf
 android.permission.PermissionControllerManager.getRuntimePermissionBackup(android.os.UserHandle,java.util.concurrent.Executor,android.permission.PermissionControllerManager.OnGetRuntimePermissionBackupCallback)void :: android.permission.GET_RUNTIME_PERMISSIONS
 android.permission.PermissionControllerManager.restoreRuntimePermissionBackup(byte[],android.os.UserHandle)void :: android.permission.GRANT_RUNTIME_PERMISSIONS
 android.permission.PermissionControllerManager.restoreDelayedRuntimePermissionBackup(java.lang.String,android.os.UserHandle,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Boolean>)void :: android.permission.GRANT_RUNTIME_PERMISSIONS
