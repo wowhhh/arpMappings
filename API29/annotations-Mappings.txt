@@ -580,8 +580,8 @@ android.net.ConnectivityManager.setAcceptUnvalidated(android.net.Network,boolean
 android.net.ConnectivityManager.setAcceptPartialConnectivity(android.net.Network,boolean,boolean)void :: android.permission.NETWORK_STACK
 android.net.ConnectivityManager.setAvoidUnvalidated(android.net.Network)void :: android.permission.NETWORK_SETTINGS
 android.net.ConnectivityManager.startCaptivePortalApp(android.net.Network)void :: android.permission.CONNECTIVITY_INTERNAL
-android.net.ConnectivityManager.startCaptivePortalApp(android.net.Network,android.os.Bundle)void :: android.permission.NetworkStack.PERMISSION_MAINLINE_NETWORK_STACK
-android.net.ConnectivityManager.shouldAvoidBadWifi()boolean :: android.permission.NetworkStack.PERMISSION_MAINLINE_NETWORK_STACK, android.permission.NETWORK_STACK :: anyOf
+android.net.ConnectivityManager.startCaptivePortalApp(android.net.Network,android.os.Bundle)void :: android.permission.PERMISSION_MAINLINE_NETWORK_STACK
+android.net.ConnectivityManager.shouldAvoidBadWifi()boolean :: android.permission.PERMISSION_MAINLINE_NETWORK_STACK, android.permission.NETWORK_STACK :: anyOf
 android.net.ConnectivityManager.getMultipathPreference(android.net.Network)int :: android.permission.ACCESS_NETWORK_STATE
 android.net.IpSecManager.addAddress(java.net.InetAddress,int)void :: android.permission.MANAGE_IPSEC_TUNNELS
 android.net.IpSecManager.removeAddress(java.net.InetAddress,int)void :: android.permission.MANAGE_IPSEC_TUNNELS
@@ -901,10 +901,10 @@ android.telephony.ims.ProvisioningManager.setProvisioningIntValue(int,int)int ::
 android.telephony.ims.ProvisioningManager.setProvisioningStringValue(int,java.lang.String)int :: android.permission.MODIFY_PHONE_STATE
 android.telephony.ims.ProvisioningManager.setProvisioningStatusForCapability(int,int,boolean)void :: android.permission.MODIFY_PHONE_STATE
 android.telephony.ims.ProvisioningManager.getProvisioningStatusForCapability(int,int)boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
-android.telephony.PhoneStateListener.onPreciseCallStateChanged(PreciseCallStateNot Found)void :: android.permission.
-android.telephony.PhoneStateListener.onCallDisconnectCauseChanged(int,int)void :: android.permission.
-android.telephony.PhoneStateListener.onImsCallDisconnectCauseChanged(ImsReasonInfoNot Found)void :: android.permission.
-android.telephony.PhoneStateListener.onPreciseDataConnectionStateChanged(PreciseDataConnectionStateNot Found)void :: android.permission.
+android.telephony.PhoneStateListener.onPreciseCallStateChanged(PreciseCallStateNot Found)void :: android.permission.READ_PRECISE_PHONE_STATE
+android.telephony.PhoneStateListener.onCallDisconnectCauseChanged(int,int)void :: android.permission.READ_PRECISE_PHONE_STATE
+android.telephony.PhoneStateListener.onImsCallDisconnectCauseChanged(ImsReasonInfoNot Found)void :: android.permission.READ_PRECISE_PHONE_STATE
+android.telephony.PhoneStateListener.onPreciseDataConnectionStateChanged(PreciseDataConnectionStateNot Found)void :: android.permission.READ_PRECISE_PHONE_STATE
 android.telephony.SmsManager.sendTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)void :: android.permission.MODIFY_PHONE_STATE, android.permission.SEND_SMS :: allOf
 android.telephony.SmsManager.sendMultipartTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.util.List<java.lang.String>,java.util.List<android.app.PendingIntent>,java.util.List<android.app.PendingIntent>)void :: android.permission.MODIFY_PHONE_STATE
 android.telephony.SmsManager.getSmsMessagesForFinancialApp(android.os.Bundle,java.util.concurrent.Executor,android.telephony.SmsManager.FinancialSmsCallback)void :: android.permission.SMS_FINANCIAL_TRANSACTIONS
@@ -1004,7 +1004,7 @@ android.telephony.TelephonyManager.requestNumberVerification(PhoneNumberRangeNot
 android.telephony.TelephonyManager.getIsimIst()java.lang.String :: android.permission.READ_PRIVILEGED_PHONE_STATE
 android.telephony.TelephonyManager.getForbiddenPlmns()java.lang.String[] :: android.permission.READ_PHONE_STATE
 android.telephony.TelephonyManager.getForbiddenPlmns(int,int)java.lang.String[] :: android.permission.READ_PHONE_STATE
-android.telephony.TelephonyManager.getPreferredNetworkType(int)int :: android.permission.
+android.telephony.TelephonyManager.getPreferredNetworkType(int)int :: android.permission.READ_PRIVILEGED_PHONE_STATE
 android.telephony.TelephonyManager.getPreferredNetworkTypeBitmask()long :: android.permission.READ_PRIVILEGED_PHONE_STATE
 android.telephony.TelephonyManager.setNetworkSelectionModeAutomatic()void :: android.permission.MODIFY_PHONE_STATE
 android.telephony.TelephonyManager.getAvailableNetworks(CellNetworkScanResultNot Found) :: android.permission.MODIFY_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION :: allOf
